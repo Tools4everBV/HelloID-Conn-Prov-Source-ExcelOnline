@@ -1,0 +1,63 @@
+[
+  {
+    "key": "client_id",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Client ID",
+      "placeholder": "Please enter client id",
+      "required": true
+    }
+  },
+  {
+    "key": "client_secret",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Client Secret",
+      "type": "password",
+      "placeholder": "Please enter client secret",
+      "required": true
+    }
+  },
+  {
+    "key": "tenant_id",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Tenant ID",
+      "placeholder": "Please enter Tenant id",
+      "required": true
+    }
+  },
+  {
+    "key": "user_id",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "User ID",
+      "placeholder": "Please enter User id",
+      "required": true
+    }
+  },
+  {
+    "key": "document_path",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Document Path",
+      "placeholder": "Please enter the document path",
+      "required": true
+    }
+  },
+  {
+    "key": "table_name",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Table Name",
+      "placeholder": "Please enter the Table Name",
+      "required": true
+    }
+  }
+]
