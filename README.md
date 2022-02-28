@@ -1,5 +1,9 @@
 # HelloID-Conn-Prov-Source-ExcelOnline
 
+| :warning: Warning |
+|:---------------------------|
+| Note that this HelloID connector has not been tested in a production environment!      |
+
 | :information_source: Information |
 |:---------------------------|
 | This repository contains the connector and configuration code only. The implementer is responsible to acquire the connection details such as username, password, certificate, etc. You might even need to sign a contract or agreement with the supplier before implementing this connector. Please contact the client's application manager to coordinate the connector requirements.       |
@@ -73,9 +77,9 @@ The following settings are required to connect to the API.
 | Client ID | Id of the Azure app |
 | Client Secret | Secret of the Azure app |
 | Tenant ID | Id of the Azure tenant |
-| User ID | Id of the Azure User where the Sheet is located |
+| User ID | Id of the Azure User where the Sheet is located - example: 12345678-1234-1234-1234-12345678901234|
 | Document Path | Path to the document - Replace "/" with %2F - example: sheet.xlsx if it is located in the root of your documents - folder%2Fsheet.xlsx if it is in a subfolder |
-| Table Name | Name of the Sheet in the Document |
+| Table Name | Name of the Sheet in the Document - example: Sheet1 or Tabelle1 |
 
 Please correct the column numbers in the powershell script
 
