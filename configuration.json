@@ -31,13 +31,42 @@
     }
   },
   {
+    "key": "useSharepointOnline",
+    "type": "checkbox",
+    "defaultValue": false,
+    "templateOptions": {
+      "label": "Use Sharepoint (instead of Onedrive)",
+      "required": false
+    }
+  },
+  {
     "key": "user_id",
     "type": "input",
     "defaultValue": "",
     "templateOptions": {
-      "label": "User ID",
+      "label": "User ID (for Excel)",
       "placeholder": "Please enter User id",
-      "required": true
+      "required": false
+    }
+  },
+  {
+    "key": "site_name",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Site Name (for Sharepoint)",
+      "placeholder": "Please enter Site Name",
+      "required": false
+    }
+  },
+  {
+    "key": "list_name",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "List Name (for Sharepoint - optional)",
+      "placeholder": "Please enter List Name of Site",
+      "required": false
     }
   },
   {
@@ -45,7 +74,7 @@
     "type": "input",
     "defaultValue": "",
     "templateOptions": {
-      "label": "Document Path",
+      "label": "Document Path (for Excel and Sharepoint)",
       "placeholder": "Please enter the document path",
       "required": true
     }
@@ -55,7 +84,7 @@
     "type": "input",
     "defaultValue": "",
     "templateOptions": {
-      "label": "Table Name",
+      "label": "Table Name (for Excel and Sharepoint)",
       "placeholder": "Please enter the Table Name",
       "required": true
     }
