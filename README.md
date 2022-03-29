@@ -25,6 +25,7 @@
 ## Introduction
 
 This connector retrieves data from an Excel Online Sheet
+
 It now supports that it is located in a Onedrive Folder from a User or a Sharepoint Site
 
 <!-- GETTING STARTED -->
@@ -51,7 +52,8 @@ Select the application we created before, and select “<b>API Permissions</b>�
 To assign a new permission to your application, click the “<b>Add a permission</b>” button.
 From the “<b>Request API Permissions</b>” screen click “<b>Microsoft Graph</b>”.
 For this connector the following permissions are used as <b>Application permissions</b>:
-*	Read files in all site collections by using <b><i>Files.Read.All</i></b>
+*	Read files in all site collections (Onedrive) by using <b><i>Files.Read.All</i></b>
+*	Read items in all site collections (Sharepoint) by using <b><i>Sites.Read.All</i></b>
 
 Some high-privilege permissions can be set to admin-restricted and require an administrators consent to be granted.
 
@@ -79,9 +81,9 @@ The following settings are required to connect to the API.
 | Client Secret | Secret of the Azure app |
 | Tenant ID | Id of the Azure tenant |
 | Use Sharepoint (instead of Onedrive) | By default the Script searches for the file in a users onedrive folder - with this switch you can select to search a Sharepoint Site|
-| Site Name | Name of the Sharepoint Site where the file is located|
-| List Name | If the File is not located in the Default Documents Folder - Name the List where it is located|
-| User ID | Id of the Azure User where the Sheet is located - example: 12345678-1234-1234-1234-12345678901234|
+| Site Name (Sharepoint) | Name of the Sharepoint Site where the file is located|
+| List Name (Sharepoint) | If the File is not located in the Default Documents Folder - Name the List where it is located|
+| User ID (Onedrive) | Id of the Azure User where the Sheet is located - example: 12345678-1234-1234-1234-12345678901234|
 | Document Path | Path to the document - Replace "/" with %2F - example: sheet.xlsx if it is located in the root of your documents - folder%2Fsheet.xlsx if it is in a subfolder |
 | Table Name | Name of the Sheet in the Document - example: Sheet1 or Tabelle1 |
 
